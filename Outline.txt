@@ -1,3 +1,7 @@
-Quick sort
+Data Structure Topics :
+Arrays :=>
+1.Sorting 
+2.Recursion
+3.Searching
 Stack
-Sorting of arrays containing alpahbetic/ strings
+Queue
