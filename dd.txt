@@ -1,0 +1,3 @@
+Quick sort
+Stack
+Sorting of arrays containing alpahbetic/ strings
