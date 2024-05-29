@@ -9,15 +9,15 @@ public class linearSearch {
         }
         System.out.println("Enter Element to find in the Arrays:");
         int item = input.nextInt(); 
-        int flag=1;
+        int flag = 1;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == item) {
-        System.out.println(item +" found in the Array at index: "+ i);
+        System.out.println(item + " " +" found in the Array at index: "+ i);
         flag=0;
         break;
             }
         }
         if(flag==1)
-        System.out.println(item +"Element not found");
+        System.out.println(item + " "  +"Element not found");
     }
 }

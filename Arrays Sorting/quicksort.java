@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class quicksort {
     public static void quicksort(int arr[],int first, int last){
-        int i = first; //counter  of right
-        int j = last;  // counter of left
+        int i = first; //counter  of left
+        int j = last;  // counter of right
         int pivot = arr[(first+last)/2];// considering pivot as middle
-        while(i<=j){
-            while(arr[i]<pivot){
+        while(i <= j){
+            while(arr[i] < pivot){
                 i++;
             }
-            while(arr[j]>pivot){
+            while(arr[j] > pivot){
                 j--;
             }
-            if(i<=j){
+            if(i <= j){
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -30,15 +30,16 @@ public class quicksort {
         }
     }
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter the size of Array:");
-        int size = input.nextInt();
-        int arr[] = new int[size];
-        System.out.println("Enter Elements in the Arrays:");
-        for (int i = 0; i < size; i++) {
-            arr[i] = input.nextInt();
-        }
-        quicksort(arr, 0, size-1);
+        // Scanner input = new Scanner(System.in);
+        // System.out.println("Enter the size of Array:");
+        // int size = input.nextInt();
+        // int arr[] = new int[size];
+        // System.out.println("Enter Elements in the Arrays:");
+        // for (int i = 0; i < size; i++) {
+        //     arr[i] = input.nextInt();
+        // }
+        int[] arr = {64, 34, 25, 12, 22, 11, 90};
+        quicksort(arr, 0, arr.length-1);
         System.out.println("Sorted Array:");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+ " ");

@@ -2,12 +2,13 @@ import java.util.*;
 
 public class BinarySearch {
     public static void main(String args[]) {
-        int arr[] = new int[5];
+        // int arr[] = new int[5];
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter Elements in the Arrays:");
-        for (int i = 0; i < 5; i++) {
-            arr[i] = input.nextInt();
-        }
+        // System.out.println("Enter Elements in the Arrays:");
+        // for (int i = 0; i < 5; i++) {
+        //     arr[i] = input.nextInt();
+        // }
+        int[] arr = {64, 34, 25, 12, 22, 11, 90};
         System.out.println("Enter Element to find:");
         int key = input.nextInt();
         int first = 0;
@@ -19,7 +20,7 @@ public class BinarySearch {
                 break;
             } else if (arr[mid] < key) {
                 first = mid + 1;
-            } else {
+            } else  {
                 last = mid - 1;
             }
         }
