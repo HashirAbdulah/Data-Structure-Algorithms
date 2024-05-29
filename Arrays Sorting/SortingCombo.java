@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class SortingCombo {
+    //selectionSort
     public static void selectionSort(int arr[]){
         int minIndex;
         for (int i = 0; i < arr.length-1; i++) {
